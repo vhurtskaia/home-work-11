@@ -1,0 +1,15 @@
+@use "../abstracts/mixins" as *;
+@use "../abstracts/variables" as *;
+
+.container {
+    @include container;
+
+    &.small {
+        max-width: $container-small;
+        text-align: center;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+    }
+}

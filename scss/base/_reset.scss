@@ -1,0 +1,64 @@
+/* 1. Box sizing */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+/* 2. Remove default margins */
+*:not(dialog) {
+    margin: 0;
+}
+
+/* 3. Animations */
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+/* 4-5. Base body improvements */
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* 6. Media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/* 7. Form elements */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* 8-9. Text behavior */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-wrap: balance;
+}

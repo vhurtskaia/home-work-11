@@ -1,0 +1,18 @@
+@use "../abstracts/variables" as *;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin container {
+    max-width: $container-width;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+}
+
+@mixin transition {
+    transition: all 0.3s ease;
+}

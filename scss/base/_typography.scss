@@ -1,0 +1,45 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media" as *;
+
+h1, h2, h3 {
+    color: $title;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 28px;
+
+    @include tablet {
+        font-size: 36px;
+    }
+
+    @include desktop {
+        font-size: 48px;
+        line-height: 164%;
+    }
+}
+
+h2 {
+    font-size: 24px;
+
+    @include tablet {
+        font-size: 28px;
+    }
+
+    @include desktop {
+        font-size: 32px;
+    }
+}
+
+h3 {
+    font-size: 18px;
+
+    @include desktop {
+        font-size: 21px;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+}

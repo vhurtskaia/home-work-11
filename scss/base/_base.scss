@@ -1,0 +1,33 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/media" as *;
+
+body {
+    font-family: Roboto, sans-serif;
+    background: $primary;
+    color: $text;
+    line-height: 1.4;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+section {
+    padding: 60px 0;
+
+    @include desktop {
+        padding: 100px 0;
+    }
+}
+
+button {
+    background: $accent;
+    color: $white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+}
