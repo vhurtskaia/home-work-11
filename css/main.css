@@ -161,7 +161,7 @@ header nav {
   }
 }
 header nav a {
-  font-size: 14px;
+  text-transform: uppercase;
 }
 @media (min-width: 1024px) {
   header nav a {

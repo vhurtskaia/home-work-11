@@ -17,7 +17,7 @@ header {
         }
 
         a {
-            font-size: 14px;
+            text-transform: uppercase;
 
             @include desktop {
                 margin-right: 30px;
